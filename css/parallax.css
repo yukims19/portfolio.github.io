@@ -1,0 +1,94 @@
+.first_screen{
+    background-attachment: fixed;
+}
+.parallax_project, .parallax_contact{
+    /* The image used */
+    background-image: url(../images/study.png);
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax_project h1{
+    padding-top: 20px;
+    color: black;
+    background-color: #FCE0C0;
+    width: 30%;
+    left: 35%;
+    position: relative;
+}
+.third_screen{
+    background-color: #FCE0C0;
+    position: relative;
+    top: -10px;
+}
+.parallax_contact{
+    background-image: url(../images/flower2.png);
+    position: relative;
+    top: -10px;
+    background-size: contain;
+}
+.parallax_contact h1{
+    padding-top: 20px;
+    color: black;
+    background-color: #C3E8DB;
+    width: 30%;
+    left: 35%;
+    position: relative;
+}
+.forth_screen {
+    height: 330px;
+    background-color: #C3E8DB;
+    position: relative;
+    top: -20px;
+
+}
+.social{
+    top: 40px;
+}
+.slide-in {
+	  opacity: 0;
+	  transition: all .5s;
+}
+
+.align-left.slide-in {
+	  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+	  transform: translateX(30%) scale(0.95);
+}
+.slide-in.active {
+	  opacity: 1;
+	  transform: translateX(0%) scale(1);
+}
+
+.slide-up {
+	  opacity: 0;
+	  transition: all .5s;
+}
+
+.portfolio-item.slide-up {
+	  transform: translateY(20%) scale(0.95);
+}
+
+.slide-up.active {
+	  opacity: 1;
+	  transform: translateY(0%) scale(1);
+}
+
+@media (max-width: 770px){
+    .parallax_project h1{
+        width: 80%;
+        left: 10%;
+    }
+    .msg{
+        //display: none;
+        left: 5%;
+    }
+}
